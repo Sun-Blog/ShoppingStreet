@@ -1,6 +1,7 @@
+// 轮播图组件
 <template>
   <Swiper>
-    <SwiperItem v-for="(item,index) in banners" :key="index">
+    <SwiperItem v-for="(item, index) in banners" :key="index">
       <a :href="item.link">
         <img :src="item.image" />
       </a>
@@ -12,21 +13,18 @@
 import { Swiper, SwiperItem } from "components/common/swiper";
 
 export default {
-  data() {
-    return {};
-  },
   components: {
     Swiper,
-    SwiperItem
+    SwiperItem,
   },
   props: {
     banners: {
       type: Array,
       default() {
         return [];
-      }
-    }
-  }
+      },
+    },
+  },
 };
 </script>
 
