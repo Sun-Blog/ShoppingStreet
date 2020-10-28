@@ -2,6 +2,7 @@ import axios from "axios";
 
 export function request(config) {
   const instance = new axios.create({
+    // baseURL:"https://www.fastmock.site/mock/6b10bdbe044183c05dd8f103a224833f/8080",
     baseURL: "http://123.207.32.32:8000",
     // baseURL: "http://adi-v3.dev",
     timeout: 5000
